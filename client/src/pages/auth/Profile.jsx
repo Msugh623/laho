@@ -11,7 +11,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   async function getMyListings() {
-    document.title = "My Profile - Landhome";
+    document.title = "My Profile - laho";
     const res = await api.get("/auth/profile/listings");
     setMyListings(res.data);
     fetchSrc();
@@ -218,7 +218,7 @@ const Profile = () => {
                                           user.name
                                         } has been contacted over the listing, you can still contact ${
                                           user?.gender == "male" ? "him" : "her"
-                                        } as the listing has not been sold out`
+                                        } as the listing has not been sold out`,
                                     );
                                   }}
                                 >
@@ -233,7 +233,7 @@ const Profile = () => {
                                     e.stopPropagation();
                                     toast.info(
                                       "This listing has been sold out. you are seen this because" +
-                                        ` ${user?.name} marked this listing as sold`
+                                        ` ${user?.name} marked this listing as sold`,
                                     );
                                   }}
                                 >

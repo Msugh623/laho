@@ -26,7 +26,7 @@ const Nav = (props) => {
                 className="me-1 mb-1 mb-md-0 subnav-btn rounded btn"
                 onClick={() => window.scroll({ top: 0 })}
               >
-                Search for Housing & Land
+                Search for Anything
               </Link>
               {/* <Link
                 to={"/"}
@@ -75,8 +75,8 @@ const Nav = (props) => {
               <LazyLoadImage
                 src={media.logoSm}
                 effect="opacity"
-                alt="Landhome Logo"
-                about="Landhome Logo"
+                alt="laho Logo"
+                about="laho Logo"
                 height={props?.hasBg ? "50px" : "50px"}
                 className="rounded my-auto"
               />
@@ -85,7 +85,7 @@ const Nav = (props) => {
                   className={`fs-5 ${props.hasBg ? "text-light" : "themetxt"}`}
                   style={{ position: "relative", top: "5px" }}
                 >
-                  Landhome
+                  laho
                 </div>
                 <div
                   className={`pt-2 ${
@@ -98,8 +98,7 @@ const Nav = (props) => {
                       maxWidth: window.innerWidth > 900 ? "30vw" : "50vw",
                     }}
                   >
-                    Your sustainable solution for finding Housing & Land assets
-                    in Nigeria
+                    Sell, buy anything in Nigeria
                   </div>
                 </div>
               </div>
@@ -114,7 +113,7 @@ const Nav = (props) => {
                 }`}
                 onClick={() => window.scroll({ top: 0 })}
               >
-                Search for Housing & Land
+                Search for Anything
               </Link>
               {/* <Link
                 to={"/some-other-page"}

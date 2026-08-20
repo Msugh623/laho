@@ -125,7 +125,7 @@ const Travels = () => {
               explore the globe with ease and make lasting memories.
               <br />
               <br />
-              Explore the World. Live Your Dream. Travel with Landhome.
+              Explore the World. Live Your Dream. Travel with laho.
             </p>
           </Delay>
         </div>

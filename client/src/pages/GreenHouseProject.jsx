@@ -20,7 +20,7 @@ const GreenHouseProject = () => {
 
           <Delay delay={120}>
             <div className="slideUp">
-              Landhome Farm, nestled in the heart of Nigeria, has embarked on an
+              laho Farm, nestled in the heart of Nigeria, has embarked on an
               innovative greenhouse project aimed at revolutionizing agriculture
               in the region. This ambitious initiative combines traditional
               farming practices with cutting-edge technology to create a
@@ -40,13 +40,13 @@ const GreenHouseProject = () => {
                     and humidity levels, these greenhouses provide an ideal
                     environment for cultivating a variety of crops year-round,
                     regardless of external weather conditions. From tomatoes and
-                    peppers to cucumbers and leafy greens, Landhome’s greenhouse
+                    peppers to cucumbers and leafy greens, laho’s greenhouse
                     project diversifies crop production and ensures a consistent
                     and reliable food supply for local communities.
                     <div className="mt-3"></div>
-                    Moreover, the greenhouse project at Landhome Farm is not
-                    only about increasing agricultural productivity but also
-                    about promoting environmental sustainability. By utilizing
+                    Moreover, the greenhouse project at laho Farm is not only
+                    about increasing agricultural productivity but also about
+                    promoting environmental sustainability. By utilizing
                     advanced irrigation techniques such as drip irrigation and
                     capturing rainwater for reuse, the project minimizes water
                     waste and reduces reliance on traditional irrigation
@@ -93,13 +93,12 @@ const GreenHouseProject = () => {
                     practices, further reducing the farm’s carbon footprint and
                     environmental impact.
                     <div className="mt-3"></div>
-                    Furthermore, the greenhouse project at Landhome Farm
-                    represents a significant investment in the local economy,
-                    creating jobs, and stimulating economic growth in the
-                    region. Through training and employment opportunities, local
-                    residents are empowered to participate in the agricultural
-                    sector and contribute to the success of the greenhouse
-                    project.
+                    Furthermore, the greenhouse project at laho Farm represents
+                    a significant investment in the local economy, creating
+                    jobs, and stimulating economic growth in the region. Through
+                    training and employment opportunities, local residents are
+                    empowered to participate in the agricultural sector and
+                    contribute to the success of the greenhouse project.
                   </div>
                 </Delay>
               </div>
@@ -107,16 +106,16 @@ const GreenHouseProject = () => {
           </div>
 
           <div className="mt-3">
-            Additionally, by producing high-quality crops year-round, Landhome
+            Additionally, by producing high-quality crops year-round, laho
             enhances food security and reduces reliance on imported goods,
             strengthening Nigeria’s agricultural sector and fostering
-            self-sufficiency. As a result, the greenhouse project at Landhome
-            Farm not only transforms the agricultural landscape but also serves
-            as a model for sustainable development and economic empowerment in
+            self-sufficiency. As a result, the greenhouse project at laho Farm
+            not only transforms the agricultural landscape but also serves as a
+            model for sustainable development and economic empowerment in
             Nigeria and beyond.
           </div>
           <div className="mt-3">
-            The greenhouse project at Landhome Farm in Nigeria offers numerous
+            The greenhouse project at laho Farm in Nigeria offers numerous
             advantages to farm production, contributing to agricultural
             sustainability, productivity, and economic development:
           </div>

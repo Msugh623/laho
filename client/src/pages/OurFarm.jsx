@@ -30,7 +30,7 @@ const OurFarm = () => {
                 discover a diverse array of premium agricultural products,
                 proudly grown and harvested with care on our innovative farms.
                 From fresh vegetables bursting with flavor to succulent meats
-                raised with ethical and sustainable practices, Landhome offers a
+                raised with ethical and sustainable practices, laho offers a
                 bounty of wholesome goodness straight from the fields to your
                 table.
               </div>

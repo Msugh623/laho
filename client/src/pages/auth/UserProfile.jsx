@@ -19,7 +19,7 @@ const UserProfile = () => {
       uRes.data.lastname +
       "'s" +
       ` ${uRes.data.verified ? " verified business " : ""}` +
-      " Profile - Landhome";
+      " Profile - laho";
     const lRes = await api.get("/auth/profile/listings/user/" + uid);
     setHisListings(lRes.data);
   }
@@ -181,7 +181,7 @@ const UserProfile = () => {
                                           theUser?.gender == "male"
                                             ? "him"
                                             : "her"
-                                        } as the listing has not been sold out`
+                                        } as the listing has not been sold out`,
                                     );
                                   }}
                                 >
@@ -196,7 +196,7 @@ const UserProfile = () => {
                                     e.stopPropagation();
                                     toast.info(
                                       "This listing has been sold out. you are seen this because" +
-                                        ` ${theUser?.name} marked this listing as sold`
+                                        ` ${theUser?.name} marked this listing as sold`,
                                     );
                                   }}
                                 >
@@ -208,7 +208,7 @@ const UserProfile = () => {
                             {(() => {
                               const isImage =
                                 (listing.images[0]?.type || "").startsWith(
-                                  "image"
+                                  "image",
                                 ) && listing.images[0]?.type;
                               return isImage ? (
                                 <LazyLoadImage

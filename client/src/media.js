@@ -23,39 +23,37 @@ export const homeProducts = [
   {
     name: "Vegetables",
     image: "/images/demo.png",
-    about: "Landhome is a pioneering farm business dedicated to vegetable, ",
+    about: "laho is a pioneering farm business dedicated to vegetable, ",
     url: "/our-farm/vegetables",
   },
   {
     name: "Fruit",
     image: "/images/demo1.png",
-    about:
-      "Landhome is a leading farm business specializing in fruit production, ",
+    about: "laho is a leading farm business specializing in fruit production, ",
     url: "/our-farm/fruits",
   },
   {
     name: "Oil Production",
     image: "/images/demo2.png",
-    about: "Landhome is a pioneering farm business that specializes in",
+    about: "laho is a pioneering farm business that specializes in",
     url: "/our-farm/oil-production",
   },
   {
     name: "Vegetables",
     image: "/images/demo.png",
-    about: "Landhome is a pioneering farm business dedicated to vegetable, ",
+    about: "laho is a pioneering farm business dedicated to vegetable, ",
     url: "/our-farm/vegetables",
   },
   {
     name: "Fruit",
     image: "/images/demo1.png",
-    about:
-      "Landhome is a leading farm business specializing in fruit production, ",
+    about: "laho is a leading farm business specializing in fruit production, ",
     url: "/our-farm/fruits",
   },
   {
     name: "Oil Production",
     image: "/images/demo2.png",
-    about: "Landhome is a pioneering farm business that specializes in",
+    about: "laho is a pioneering farm business that specializes in",
     url: "/our-farm/oil-production",
   },
 ];

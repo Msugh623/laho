@@ -17,7 +17,7 @@ export async function parsFe(req, res) {
         .replace(
           "$title",
           metadata.title ||
-            "Find, buy, and rent land and housing in a fast-changing digital era - Landhome",
+            "Find, buy, and rent land and housing in a fast-changing digital era - laho",
         )
         .replace(
           "$description",
@@ -42,7 +42,7 @@ const meta = [
     name: "/",
     icon: "/logo.png",
     title:
-      "Find, buy, and rent land and housing in a fast-changing digital era - Landhome",
+      "Find, buy, and rent land and housing in a fast-changing digital era - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
     tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property",
@@ -51,7 +51,7 @@ const meta = [
     name: "/contact-us",
     icon: "/logo.png",
     title:
-      "Contact us for support and assistance on finding, buying, and renting land and housing in a fast-changing digital era - Landhome",
+      "Contact us for support and assistance on finding, buying, and renting land and housing in a fast-changing digital era - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
     tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property",
@@ -60,7 +60,7 @@ const meta = [
     name: "/about-us",
     icon: "/logo.png",
     title:
-      "Learn more about how landsmart make it easier for you to find, buy, and rent land and housing in a fast-changing digital era - Landhome",
+      "Learn more about how landsmart make it easier for you to find, buy, and rent land and housing in a fast-changing digital era - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
     tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property",
@@ -69,35 +69,34 @@ const meta = [
     name: "/auth/login",
     icon: "/logo.png",
     title:
-      "Login to your landhome account to post and mannage your listings - Landhome",
+      "Login to your laho account to post and mannage your listings - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
-    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, landhome login",
+    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, laho login",
   },
   {
     name: "/auth/create-account",
     icon: "/logo.png",
-    title:
-      "Create a landhome account to post and mannage your listings - Landhome",
+    title: "Create a laho account to post and mannage your listings - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
-    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, landhome login",
+    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, laho login",
   },
   {
     name: "/auth/user-profile/verification",
     icon: "/logo.png",
-    title: "Get Verified, build customer trust - Landhome",
+    title: "Get Verified, build customer trust - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
-    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, landhome login",
+    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, laho login",
   },
   {
     name: "/auth/user-profile/verification/view",
     icon: "/logo.png",
-    title: "Manage your verification - Landhome",
+    title: "Manage your verification - laho",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
-    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, landhome login",
+    tags: "buy land, rent land, sell land, land for sale, rent house, rentals, rent property, laho login",
   },
 ];
 

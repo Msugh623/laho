@@ -28,7 +28,7 @@ const VerificationPage = () => {
     } catch (err) {
       console.error(err);
       toast.error(
-        err?.response?.data || err?.message || "Failed to delete verification"
+        err?.response?.data || err?.message || "Failed to delete verification",
       );
     } finally {
       setLoading(false);
@@ -39,7 +39,7 @@ const VerificationPage = () => {
     if (!verification?.id) return;
     if (
       !window.confirm(
-        "You will pay a verification fee of N5000 to complete verification"
+        "You will pay a verification fee of N5000 to complete verification",
       )
     )
       return;
@@ -52,7 +52,7 @@ const VerificationPage = () => {
     } catch (err) {
       console.error(err);
       toast.error(
-        err?.response?.data || err?.message || "Failed to delete verification"
+        err?.response?.data || err?.message || "Failed to delete verification",
       );
     } finally {
       setLoading(false);
@@ -61,7 +61,7 @@ const VerificationPage = () => {
 
   useEffect(() => {
     fetchSrc();
-    document.title = "Manage your Verification - Landhome";
+    document.title = "Manage your Verification - laho";
   }, []);
   if (!verification?.id) {
     return <GetVerified />;
@@ -123,7 +123,7 @@ const VerificationPage = () => {
                                   style={{
                                     objectFit: "cover",
                                   }}
-                                />
+                                />,
                               );
                             }}
                           />
@@ -195,7 +195,7 @@ const VerificationPage = () => {
                 ) : (
                   <div className="alert alert-warning mt-4 d-flex align-items-center gap-2">
                     <FaShieldAlt className="text-warning fs-4" />
-                    <span>You Landhome account is verified</span>
+                    <span>You laho account is verified</span>
                   </div>
                 )}
               </div>

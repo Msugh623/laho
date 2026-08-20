@@ -13,20 +13,17 @@ const Footer = () => {
                 <div className="footer-info">
                   <div className="row">
                     <div className="col-md-6">
-                      <h3>Landhome</h3>
+                      <h3>laho</h3>
                       <p>
-                        We are committed to leveraging technology to remove
-                        unnecessary middlemen, reduce costs, and create a level
-                        playing field for both seasoned investors and first-time
-                        buyers.
+                        We make it easy to discover, compare, and buy the things
+                        people need every day—from homes and land to vehicles,
+                        gadgets, and other everyday essentials.
                       </p>
                       <p>
                         <div className="fs-5 mb-2">
                           <FaLocationDot className="icon " /> Address
                         </div>
-                        Plot 40, Beside Devine Progressive College Gboko West
-                        along Gboko college of Education way, Gboko West Benue
-                        state, Nigeria.
+                        Uniagric
                       </p>
                     </div>
                     <div className="col-md-6 px-md-5">
@@ -34,22 +31,16 @@ const Footer = () => {
 
                       <div
                         onClick={() => {
-                          navigator.clipboard.writeText("+234 906 791 2440");
+                          navigator.clipboard.writeText("8121667177");
                         }}
                       >
                         <div>Phone:</div>
-                        +234 906 791 2440
+                        8121667177
                       </div>
 
                       <div className="text-light mt-3">
                         <div>Email:</div>
-                        <a href="mailto:sirgbemziho@gmail.com">
-                          sirgbemziho@gmail.com
-                        </a>
-                        <br />
-                        <a href="mailto:sirgbemziho@gmail.com">
-                          sirgbemziho@gmail.com
-                        </a>
+                        <a href="mailto:team@sprintet.com">team@sprintet.com</a>
                       </div>
                       <br />
                     </div>
@@ -70,7 +61,7 @@ const Footer = () => {
                     textDecoration: "underline",
                   }}
                 >
-                  Search for Housing & Land
+                  Search for Anything
                 </Link>
                 <Link
                   to={"/about-us"}
@@ -113,12 +104,12 @@ const Footer = () => {
             . All Rights Reserved
           </div>
         </div>
-        <div className="credits container text-center">
+        {/* <div className="credits container text-center">
           Designed by and developed by{" "}
           <a className="text-light" href="https://github.com/msugh623">
             Ernest Chia
           </a>
-        </div>
+        </div> */}
       </footer>
     </div>
   );

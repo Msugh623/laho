@@ -19,8 +19,8 @@ const Loader = () => {
             <LazyLoadImage
               src={media.logoSm}
               effect="opacity"
-              alt="Landhome Logo"
-              about="Landhome Logo"
+              alt="laho Logo"
+              about="laho Logo"
               height={"120px"}
               className="rounded slideIn"
             />
@@ -30,7 +30,7 @@ const Loader = () => {
                 <Delay delay={300}>
                   <FaSpinner className="spinner icon growIn me-2" />
                 </Delay>
-                Landhome
+                laho
               </div>
             </Delay>
           </h1>

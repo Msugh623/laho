@@ -10,7 +10,7 @@ const Contact = () => {
 
   useEffect(() => {
     scroll({ top: 0 });
-    document.title = "Contact Us - Landhome";
+    document.title = "Contact Us - laho";
   }, []);
 
   return (
@@ -31,11 +31,7 @@ const Contact = () => {
                   <h6>
                     <FaLocationDot className="icon" /> Address:
                   </h6>
-                  <h5 className="mb-1">
-                    Plot 40, Beside Devine Progressive College Gboko West along
-                    Gboko college of Education way, Gboko West Benue state,
-                    Nigeria.
-                  </h5>
+                  <h5 className="mb-1">Uniagric</h5>
                 </div>
               </Delay>
               <Delay delay={500}>
@@ -44,12 +40,10 @@ const Contact = () => {
                     <GrContactInfo className="icon fs-4" /> Contact:
                   </h6>
                   <h5>
-                    +234 906 791 2440
+                    8121667177
                     <br />
                     <br />
-                    sirgbemziho@gmail.com
-                    <br />
-                    sirgbemziho@gmail.com
+                    team@sprintet.com
                     <br />
                   </h5>
                 </div>
@@ -68,7 +62,7 @@ const Contact = () => {
                   <a
                     className="slideRight fs-4"
                     target="_blank"
-                    href="mailto:sirgbemziho@gmail.com"
+                    href="mailto:team@sprintet.com"
                   >
                     <BsEnvelopeAtFill />
                   </a>

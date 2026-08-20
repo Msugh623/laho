@@ -11,5 +11,5 @@ Disallow: /auth/verification/finish
 Disallow: /*?*
 
 # Sitemap location
-Sitemap: https://landhome.onrender.com/sitemap.xml
-Sitemap: https://landhome.onrender.com/listingsmap.xml
+Sitemap: https://laho.onrender.com/sitemap.xml
+Sitemap: https://laho.onrender.com/listingsmap.xml

@@ -18,7 +18,7 @@ class UseStripe {
           price_data: {
             currency: "ngn",
             product_data: {
-              name: "Landhome Verification Payment",
+              name: "laho Verification Payment",
               description:
                 "Become a verified landsmart dealer, a verified profile strengthens customer trust",
               images: ["/logo.png"],

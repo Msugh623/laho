@@ -312,11 +312,11 @@ const NavGeneric = () => {
       onMouseLeave={() => setTimeout(() => setShow(false), 300)}
     >
       <Delay delay={1800}>
-        <h1 title="Landhome Logo" className="mx-auto mt-3">
+        <h1 title="laho Logo" className="mx-auto mt-3">
           <img
             src="https://res.cloudinary.com/dqbgai7xd/image/upload/e_improve,e_sharpen/v1723495167/WhatsApp_Image_2024-08-12_at_18.23.41_1_ezuolb.jpg"
-            alt="Landhome Logo"
-            about="Landhome Logo"
+            alt="laho Logo"
+            about="laho Logo"
             width={"80px"}
             className=" rounded slideUp"
           />
@@ -361,7 +361,7 @@ const NavGeneric = () => {
                           document
                             .getElementById("services")
                             .scrollIntoView({ behavior: "smooth" }),
-                        300
+                        300,
                       )
                     }
                   >

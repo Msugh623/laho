@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     document.title =
-      "Find, buy, and rent land and housing in a fast-changing digital era - Landhome";
+      "Sell, buy anything in a fast-changing digital marketplace - laho";
   }, []);
 
   return (
@@ -50,13 +50,13 @@ const Home = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-12 d-flex flex-column">
                   <h1 className="slideUp fw-bold mt-5 pt-5 h2 text-center">
-                    Find Housing & Land assets for sale/rental in Nigeria
+                    Sell, buy anything in Nigeria
                   </h1>
                   <p className="fs-6 col-11 col-md-9 mx-auto">
                     <Delay delay={100}>
                       <div className="slideUp small text-center pt-2">
-                        Your sustainable solution for finding Housing & Land
-                        assets in Nigeria
+                        Your modern marketplace to sell, buy, and discover
+                        homes, cars, gadgets, and more.
                         <br />
                         <br />
                       </div>
@@ -134,7 +134,7 @@ const Home = () => {
                                       theUser.name
                                     } has been contacted over the listing, you can still contact ${
                                       theUser?.gender == "male" ? "him" : "her"
-                                    } as the listing has not been sold out`
+                                    } as the listing has not been sold out`,
                                 );
                               }}
                             >
@@ -149,7 +149,7 @@ const Home = () => {
                                 e.stopPropagation();
                                 toast.info(
                                   "This listing has been sold out. you are seen this because" +
-                                    ` ${theUser?.name} marked this listing as sold`
+                                    ` ${theUser?.name} marked this listing as sold`,
                                 );
                               }}
                             >
@@ -161,7 +161,7 @@ const Home = () => {
                         {(() => {
                           const isImage =
                             (listing.images[0]?.type || "").startsWith(
-                              "image"
+                              "image",
                             ) && listing.images[0]?.type;
                           return isImage ? (
                             <LazyLoadImage

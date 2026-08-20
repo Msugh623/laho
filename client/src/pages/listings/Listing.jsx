@@ -21,7 +21,7 @@ const Listing = () => {
       try {
         const res = await api.get("/listings/" + listingId);
         setTheListing(res.data);
-        document.title = res?.data?.name + " - Landhome";
+        document.title = res?.data?.name + " - laho";
         if (res.data?.images?.length > 0) {
           setActiveMedia(res.data.images[0]); // default: first media
         }
@@ -67,7 +67,7 @@ const Listing = () => {
                             theUser.name
                           } has been contacted over the listing, you can still contact ${
                             theUser?.gender == "male" ? "him" : "her"
-                          } as the listing has not been sold out`
+                          } as the listing has not been sold out`,
                       );
                     }}
                   >
@@ -81,7 +81,7 @@ const Listing = () => {
                     onClick={() => {
                       toast.info(
                         "This listing has been sold out. you are seen this because" +
-                          ` ${theUser?.name} marked this listing as sold`
+                          ` ${theUser?.name} marked this listing as sold`,
                       );
                     }}
                   >
@@ -112,7 +112,7 @@ const Listing = () => {
                               width: "100%",
                               objectFit: "cover",
                             }}
-                          />
+                          />,
                         );
                       }}
                     />
@@ -139,7 +139,7 @@ const Listing = () => {
                               width: "100%",
                               objectFit: "cover",
                             }}
-                          />
+                          />,
                         );
                       }}
                     />
@@ -276,7 +276,7 @@ const Listing = () => {
               )}
               {theUser.email && (
                 <a
-                  href={`mailto:${theUser.email}?subject=Inquiry for your ${theListing.name} listing on Landhome&&body=I am interested in your listing ${location.href} %0A`}
+                  href={`mailto:${theUser.email}?subject=Inquiry for your ${theListing.name} listing on laho&&body=I am interested in your listing ${location.href} %0A`}
                   className="btn btn-outline-success btn-small small p-1 me-1 px-2"
                   target="_blank"
                   rel="noopener noreferrer"

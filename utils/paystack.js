@@ -15,7 +15,7 @@ class UsePaymentGateway {
 
     this.paystack = new PayStack(
       process.env.PAYSTACK_SK,
-      process.env.NODE_ENV === "production" ? "live" : "test"
+      process.env.NODE_ENV === "production" ? "live" : "test",
     );
   }
 
@@ -35,7 +35,7 @@ class UsePaymentGateway {
             {
               display_name: "Payment For",
               variable_name: "description",
-              value: "Landhome Verification Payment",
+              value: "laho Verification Payment",
             },
             {
               display_name: "Host URL",
@@ -46,14 +46,13 @@ class UsePaymentGateway {
         }),
       });
 
-
       const { authorization_url, reference, access_code } = response.body.data;
 
       return { url: authorization_url, id: reference, access_code };
     } catch (error) {
       console.error(
         "Paystack Initialization Error:",
-        error.response?.body || error.message || error
+        error.response?.body || error.message || error,
       );
       throw new Error("Failed to initialize Paystack transaction.");
     }
@@ -66,7 +65,7 @@ class UsePaymentGateway {
     } catch (error) {
       console.error(
         "Paystack Verification Error:",
-        error.response?.body || error.message || error
+        error.response?.body || error.message || error,
       );
       throw new Error("Failed to verify Paystack transaction.");
     }

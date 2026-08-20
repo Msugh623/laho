@@ -111,7 +111,7 @@ const GetVerified = () => {
   };
 
   useEffect(() => {
-    document.title = "Get Verified, build customer trust - Landhome";
+    document.title = "Get Verified, build customer trust - laho";
   }, []);
 
   const FileUploader = ({ label, file, setFile, required }) => {

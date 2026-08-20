@@ -24,7 +24,7 @@ const MyListing = () => {
         if (res.data?.images?.length > 0) {
           setActiveMedia(res.data.images[0]); // default: first media
         }
-        document.title = "My " + res.data.name + " listing - Landhome";
+        document.title = "My " + res.data.name + " listing - laho";
         const { uid } = res.data;
         const lRes = await api.get("/listings/users/" + uid);
         setTheUser(lRes.data);
@@ -60,7 +60,7 @@ const MyListing = () => {
                 onClick={() => {
                   toast.info(
                     "This is probably because " +
-                      `You have been contacted over the listing and marked it as sold`
+                      `You have been contacted over the listing and marked it as sold`,
                   );
                 }}
               >
@@ -74,7 +74,7 @@ const MyListing = () => {
                 onClick={() => {
                   toast.info(
                     "This listing has been sold out. you are seen this because" +
-                      ` You marked this listing as sold`
+                      ` You marked this listing as sold`,
                   );
                 }}
               >
@@ -105,7 +105,7 @@ const MyListing = () => {
                               width: "100%",
                               objectFit: "cover",
                             }}
-                          />
+                          />,
                         );
                       }}
                     />
@@ -132,7 +132,7 @@ const MyListing = () => {
                               width: "100%",
                               objectFit: "cover",
                             }}
-                          />
+                          />,
                         );
                       }}
                     />
@@ -258,7 +258,7 @@ const MyListing = () => {
                       err?.response?.data?.message ||
                         err?.response?.data ||
                         err?.message ||
-                        "Something went wrong"
+                        "Something went wrong",
                     );
                   } finally {
                     toast.dismiss(tst);
@@ -284,7 +284,7 @@ const MyListing = () => {
                       err?.response?.data?.message ||
                         err?.response?.data ||
                         err?.message ||
-                        "Something went wrong"
+                        "Something went wrong",
                     );
                   } finally {
                     toast.dismiss(tst);
@@ -319,7 +319,7 @@ const MyListing = () => {
                       err?.response?.data?.message ||
                         err?.response?.data ||
                         err?.message ||
-                        "Failed to delete listing"
+                        "Failed to delete listing",
                     );
                   } finally {
                     toast.dismiss(tst);

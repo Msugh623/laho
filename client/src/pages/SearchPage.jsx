@@ -40,7 +40,7 @@ const SearchPage = () => {
       });
       setListings(res.data.results);
       setTotalResults(res.data.total);
-      document.title = `${res.data.total} listings for "${q}" - Landhome`;
+      document.title = `${res.data.total} listings for "${q}" - laho`;
     } catch (err) {
       setError(err.message || "An error occurred");
     } finally {
@@ -254,7 +254,7 @@ const SearchPage = () => {
                                 theUser.name
                               } has been contacted over the listing, you can still contact ${
                                 theUser?.gender == "male" ? "him" : "her"
-                              } as the listing has not been sold out`
+                              } as the listing has not been sold out`,
                           );
                         }}
                       >
@@ -369,7 +369,7 @@ const SearchPage = () => {
                 {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
                   const pageNumber = Math.max(
                     1,
-                    Math.min(page - 2 + i, totalPages)
+                    Math.min(page - 2 + i, totalPages),
                   );
                   return (
                     <li

@@ -20,9 +20,9 @@ config({
 const port = process.env.PORT || 3000;
 const app = express();
 const server = new http.Server(app);
-app.get("/heartbeat",(_,res)=>{
-    res.send("[ OK ]")
-})
+app.get("/heartbeat", (_, res) => {
+  res.send("[ OK ]");
+});
 app.use(express.static(path.join(rootdirname(), "public")));
 app.use(express.json());
 app.use(cookieParser());
@@ -33,7 +33,7 @@ app.use(
     methods: ["GET", "HEAD", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization", "X-Auth"],
     // credentials:true
-  })
+  }),
 );
 app.use("/auth", authRouter);
 app.use("/users", usersRouter);
@@ -46,7 +46,7 @@ app.get("/:path(*)", parsFe);
 
 server.listen(port, () => {
   console.log(
-    `\n\x1b[37m${"server running at http://localhost:" + port}\x1b[39m\n`
+    `\n\x1b[37m${"server running at http://localhost:" + port}\x1b[39m\n`,
   );
   setTimeout(async () => {
     try {
@@ -55,14 +55,17 @@ server.listen(port, () => {
       console.log("SITEMAPERR:", e);
       await makeSitemap();
     }
-    setInterval(async () => {
-      try {
-        await makeSitemap();
-      } catch (e) {
-        console.log("SITEMAPERR:", e);
-        await makeSitemap();
-      }
-    }, 1000 * 60 * 60 * 12);
+    setInterval(
+      async () => {
+        try {
+          await makeSitemap();
+        } catch (e) {
+          console.log("SITEMAPERR:", e);
+          await makeSitemap();
+        }
+      },
+      1000 * 60 * 60 * 12,
+    );
   }, 5000);
 });
 
@@ -70,7 +73,7 @@ setInterval(() => {
   setTimeout(() => {
     (async () => {
       try {
-        const _ = await fetch("https://landhome.onrender.com/heartbeat", {
+        const _ = await fetch("https://laho.onrender.com/heartbeat", {
           method: "GET",
         });
         console.log(`Ping: ${new Date().toString()}`);
