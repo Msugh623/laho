@@ -20,11 +20,26 @@ const About = () => {
           <div className="row">
             <Delay delay={150}>
               <div className="px-md-3 pb-3 slideUp">
-                laho was founded with a simple but ambitious idea to redefine
-                how people discover and buy anything in a fast-changing digital
-                era. From homes and land to everyday essentials and unique
-                finds, the buying process should be simpler, smarter, and more
-                transparent for everyone. We are here to change that.
+                ## Laho
+
+Laho is a Nigerian marketplace connecting marketers, sellers, and buyers in one accessible platform. Discover products, generate leads, connect with customers, and take your purchase journey directly to the inbox.
+
+Connect
+
+Have a question, partnership idea, or feedback?
+
+Email:ahiabuikeexcel@gmail.com(mailto:ahiabuikeexcel@gmail.com)
+
+GitHub:Codingches
+
+Laho
+
+Making buying and selling more accessible, connected, and convenient.
+
+Discover. Connect. Chat. Purchase.
+
+© 2026 Laho. All rights reserved.
+
               </div>
             </Delay>
 
@@ -120,7 +135,7 @@ const About = () => {
                     make the process seamless and trustworthy.
                   </p>
                   <p>
-                    Welcome to laho where opportunities meet trust, and the
+                    Welcome to Laho where opportunities meet trust, and the
                     future of commerce becomes simpler, smarter, and more
                     accessible for all.
                   </p>
