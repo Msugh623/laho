@@ -33,7 +33,7 @@ const Login = () => {
       location.replace(rep || "/");
     } catch (err) {
       toast.error(
-        `${err?.response?.data?.message || err?.response?.data || err?.message}`
+        `${err?.response?.data?.message || err?.response?.data || err?.message}`,
       );
     } finally {
       toast.dismiss(tst);
@@ -54,7 +54,7 @@ const Login = () => {
                   <LazyLoadImage
                     effect="opacity"
                     className="me-2 h-[] my-auto icon"
-                    src="https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp"
+                    src="/logo.png"
                     alt=""
                     height={"40px"}
                   />

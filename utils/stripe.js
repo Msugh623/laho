@@ -21,9 +21,7 @@ class UseStripe {
               name: "Landhome Verification Payment",
               description:
                 "Become a verified landsmart dealer, a verified profile strengthens customer trust",
-              images: [
-                "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
-              ],
+              images: ["/logo.png"],
             },
             unit_amount: 5000 * 100,
           },

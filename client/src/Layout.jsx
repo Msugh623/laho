@@ -33,8 +33,7 @@ const ViewPort = () => {
   useEffect(() => {
     const ico = document.getElementById("ico");
     if (ico) {
-      ico.href =
-        "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp";
+      ico.href = "/logo.png";
     }
   }, []);
   return (

@@ -11,28 +11,24 @@ export async function parsFe(req, res) {
         path.join(rootdirname(), "public", "indexer.html"),
         {
           encoding: "utf-8",
-        }
+        },
       );
       const prsFe = fe
         .replace(
           "$title",
           metadata.title ||
-            "Find, buy, and rent land and housing in a fast-changing digital era - Landhome"
+            "Find, buy, and rent land and housing in a fast-changing digital era - Landhome",
         )
         .replace(
           "$description",
           metadata.description ||
-            "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers."
+            "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
         )
-        .replace(
-          "$favico",
-          metadata.icon ||
-            "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp"
-        )
+        .replace("$favico", metadata.icon || "/logo.png")
         .replace(
           "$keywords",
           metadata.tags ||
-            "buy land, rent land, sell land, land for sale, rent house, rentals, rent property"
+            "buy land, rent land, sell land, land for sale, rent house, rentals, rent property",
         );
       res.status(200).send(prsFe);
     } catch (err) {
@@ -44,7 +40,7 @@ export async function parsFe(req, res) {
 const meta = [
   {
     name: "/",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title:
       "Find, buy, and rent land and housing in a fast-changing digital era - Landhome",
     description:
@@ -53,7 +49,7 @@ const meta = [
   },
   {
     name: "/contact-us",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title:
       "Contact us for support and assistance on finding, buying, and renting land and housing in a fast-changing digital era - Landhome",
     description:
@@ -62,7 +58,7 @@ const meta = [
   },
   {
     name: "/about-us",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title:
       "Learn more about how landsmart make it easier for you to find, buy, and rent land and housing in a fast-changing digital era - Landhome",
     description:
@@ -71,7 +67,7 @@ const meta = [
   },
   {
     name: "/auth/login",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title:
       "Login to your landhome account to post and mannage your listings - Landhome",
     description:
@@ -80,7 +76,7 @@ const meta = [
   },
   {
     name: "/auth/create-account",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title:
       "Create a landhome account to post and mannage your listings - Landhome",
     description:
@@ -89,7 +85,7 @@ const meta = [
   },
   {
     name: "/auth/user-profile/verification",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title: "Get Verified, build customer trust - Landhome",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
@@ -97,7 +93,7 @@ const meta = [
   },
   {
     name: "/auth/user-profile/verification/view",
-    icon: "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp",
+    icon: "/logo.png",
     title: "Manage your verification - Landhome",
     description:
       "We are committed to leveraging technology to remove unnecessary middlemen, reduce costs, and create a level playing field for both seasoned investors and first-time buyers.",
@@ -140,12 +136,12 @@ async function getMeta(pathname = "/") {
     meta.find(
       (m) =>
         pathname.includes(m.name) &&
-        pathname.length - m.name.length < (50 / 100) * pathname.length
+        pathname.length - m.name.length < (50 / 100) * pathname.length,
     ) ||
     meta.find(
       (m) =>
         pathname.includes(m.name) &&
-        m.name.length - pathname.length < (50 / 100) * m.name.length
+        m.name.length - pathname.length < (50 / 100) * m.name.length,
     ) ||
     meta.find((m) => pathname.includes(m.name)) ||
     meta[0];

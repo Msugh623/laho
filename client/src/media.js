@@ -1,6 +1,5 @@
 class MediaData {
-  logoSm =
-    "https://res.cloudinary.com/dqbgai7xd/image/upload/v1736545732/file-Rp7LigZ9bGy8B3f6NtYaKJ_eqp365.webp";
+  logoSm = "/logo.png";
   heroBg = "/Media/hero2.jpg";
   heroBg1 = "/Media/horticulture-greenhouse-hero-background.jpg";
   heroBg2 = "/Media/hero1.jpg";
