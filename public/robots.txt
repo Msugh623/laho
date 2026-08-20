@@ -1,0 +1,15 @@
+# Allow all search engines
+User-agent: *
+Disallow: /sys/admin
+Disallow: /auth/login
+Disallow: /auth/create-account
+Disallow: /auth/user-profile
+Disallow: /auth/user-profile/edit
+Disallow: /auth/user-profile/listings
+Disallow: /auth/user-profile/verification
+Disallow: /auth/verification/finish
+Disallow: /*?*
+
+# Sitemap location
+Sitemap: https://landhome.onrender.com/sitemap.xml
+Sitemap: https://landhome.onrender.com/listingsmap.xml
