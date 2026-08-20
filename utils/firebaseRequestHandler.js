@@ -20,38 +20,34 @@ const verificationsRef = collection(db, "verificationRequest");
 
 class Fb {
   // === Queries ===
-  usremailq = (email) =>
-    query(
-      usersRef,
-      orderBy("dateModified", "desc"),
-      where("email", "==", email)
-    );
+  usremailq = (email) => query(usersRef, where("email", "==", email));
 
-  lstuidq = (uid) =>
-    query(
-      listingsRef,
-      orderBy("relevance", "desc"),
-      orderBy("reach", "desc"),
-      where("uid", "==", uid)
-    );
+  lstuidq = (uid) => query(listingsRef, where("uid", "==", uid));
 
-  lstfeeddq = () =>
-    query(
-      listingsRef,
-      orderBy("relevance", "desc"),
-      orderBy("reach", "desc"),
-      limit(10)
-    );
+  lstfeeddq = () => query(listingsRef, limit(10));
 
   // === Users ===
   validateUser = async (email) => {
     const res = await getDocs(this.usremailq(email));
-    return res.docs.map((doc) => doc.data())[0];
+    return res.docs
+      .map((doc) => doc.data())
+      .sort((a, b) => {
+        const aTime = a.dateModified?.seconds ?? a.dateCreated?.seconds ?? 0;
+        const bTime = b.dateModified?.seconds ?? b.dateCreated?.seconds ?? 0;
+        return bTime - aTime;
+      })[0];
   };
 
   getListingsByUID = async (uid) => {
     const res = await getDocs(this.lstuidq(uid));
-    return res.docs.map((doc) => doc.data());
+    return res.docs
+      .map((doc) => doc.data())
+      .sort((a, b) => {
+        const aScore = Number(a.relevance ?? 0);
+        const bScore = Number(b.relevance ?? 0);
+        if (bScore !== aScore) return bScore - aScore;
+        return Number(b.reach ?? 0) - Number(a.reach ?? 0);
+      });
   };
 
   addUser = async (state) => {
@@ -106,7 +102,14 @@ class Fb {
 
   getFeedListings = async () => {
     const res = await getDocs(this.lstfeeddq());
-    return res.docs?.map((doc) => ({ ...doc.data() }));
+    return res.docs
+      ?.map((doc) => ({ ...doc.data() }))
+      .sort((a, b) => {
+        const aScore = Number(a.relevance ?? 0);
+        const bScore = Number(b.relevance ?? 0);
+        if (bScore !== aScore) return bScore - aScore;
+        return Number(b.reach ?? 0) - Number(a.reach ?? 0);
+      });
   };
 
   addListing = async (state) => {
@@ -154,13 +157,15 @@ class Fb {
   };
 
   getVerificationRequestsByUID = async (uid) => {
-    const q = query(
-      verificationsRef,
-      where("uid", "==", uid),
-      orderBy("dateCreated", "desc")
-    );
+    const q = query(verificationsRef, where("uid", "==", uid));
     const res = await getDocs(q);
-    return res.docs?.map((doc) => ({ ...doc.data() }))[0];
+    return res.docs
+      ?.map((doc) => ({ ...doc.data() }))
+      .sort((a, b) => {
+        const aTime = a.dateCreated?.seconds ?? a.dateModified?.seconds ?? 0;
+        const bTime = b.dateCreated?.seconds ?? b.dateModified?.seconds ?? 0;
+        return bTime - aTime;
+      })[0];
   };
 
   deleteVerificationRequest = async (id) => {
