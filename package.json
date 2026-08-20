@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch index.js --ignore client --ignore /**/*.jsx",
     "start": "tsx index.js",
-    "postinstall": "./buildclient.sh"
+    "postinstall": "echo pass || ./buildclient.sh"
   },
   "author": "msugh623",
   "license": "ISC",
@@ -23,9 +23,9 @@
     "paystack-node": "^0.3.0",
     "socket.io": "^4.8.1",
     "stripe": "^18.5.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.5"
   },
   "devDependencies": {
-    "tsx": "^4.20.5"
   }
 }
