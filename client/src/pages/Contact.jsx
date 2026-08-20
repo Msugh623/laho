@@ -31,7 +31,7 @@ const Contact = () => {
                   <h6>
                     <FaLocationDot className="icon" /> Address:
                   </h6>
-                  <h5 className="mb-1">Uniagric</h5>
+                  <h5 className="mb-1">Joseph suarwan tarka University makurdi Benue state Nigeria.</h5>
                 </div>
               </Delay>
               <Delay delay={500}>
@@ -40,10 +40,10 @@ const Contact = () => {
                     <GrContactInfo className="icon fs-4" /> Contact:
                   </h6>
                   <h5>
-                    8121667177
+                    09048960601
                     <br />
                     <br />
-                    team@sprintet.com
+                    ahiabuikeexcel@gmail.com
                     <br />
                   </h5>
                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                   <a
                     className="slideRight fs-4"
                     target="_blank"
-                    href="mailto:team@sprintet.com"
+                    href="mailto: ahiabuikeexcel@gmail.com"
                   >
                     <BsEnvelopeAtFill />
                   </a>
