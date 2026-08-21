@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch index.js --ignore client --ignore /**/*.jsx",
     "start": "tsx index.js",
-    "postinstall": "echo pass || ./buildclient.sh"
+    "postinstall": "./buildclient.sh"
   },
   "author": "msugh623",
   "license": "ISC",
